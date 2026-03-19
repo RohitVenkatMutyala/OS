@@ -902,7 +902,7 @@ index 0000000..44fda39
 +		PrintString("Parent before sleep\n");
 +	}
 +	PrintString("Parent Slept\n");
-+	Sleep(4);
++	Sleep(4);  //  here 1 second = 10^6  Sleep for 4 ticks to allow child to run and print its message at least once before parent wakes up and prints its message again after waking up and before child finishes execution
 +	for(i=0;i<10;i++){
 +		PrintString("Parent after sleep\n");
 +	}
